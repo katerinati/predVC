@@ -27,7 +27,10 @@ body {
   border-radius: 3px;
   background-color: #21cf98;
   color: #ffffff;
-  &:hover {
+  &:hover,
+  &:active,
+  &:active:focus,
+  &:focus {
     background-color: #21cf98;
     color: #ffffff;
     border-color: transparent;
@@ -38,7 +41,10 @@ body {
   background-color: transparent;
   color: $brand-primary;
   border-radius: 3px;
-  &:hover {
+  &:hover,
+  &:active,
+  &:active:focus,
+  &:focus {
     border: solid 0.5px $brand-primary;
     background-color: transparent;
     color: $brand-primary;
@@ -140,11 +146,28 @@ body {
 .nav-tabs {
   border-bottom: none !important;
 }
+.suggestionButton {
+  margin-bottom: 5px;
+}
+.aboutWrapper {
+  margin-top: 45px;
+  .aboutText {
+    margin-bottom: 25px;
+  }
+  .aboutVideo {
+    margin-bottom: 110px;
+    max-width: 100%;
+  }
+}
 .aboutPannelButtonWrapper {
+  margin-top: 20px;
   text-align: right;
 }
 #about {
   color: rgba($text-color, .8);
+}
+.discussionContainer {
+  margin-bottom: 50px;
 }
 .discussionHeader {
   font-size: 14px;
@@ -157,10 +180,15 @@ body {
 .formDiscussionContainer {
   padding-left: 54px;
   position: relative;
+  margin-bottom: 47px;
   textarea {
     width: 100%;
     height: 125px;
     border: solid 1px rgba($text-color, .03);
+    margin-bottom: 10px;
+    padding-top: 14px;
+    padding-left: 20px;
+    border-radius: 3px;
   }
   .profilePicture {
     position: absolute;
@@ -198,8 +226,9 @@ body {
   }
 }
 .commentDiscussionContainer {
-  padding-bottom: 32px;
+  padding-bottom: 15px;
   border-bottom: 1px solid rgba($text-color,.05);
+  margin-bottom: 15px;
   &:last-of-type {
     border-bottom: none;
   }
@@ -208,6 +237,10 @@ body {
   }
   .discussionWrapper {
     display: inline-block;
+    margin-bottom: 20px;
+    .userName {
+      margin-right: 7px;
+    }
     .userName,
     .timePeriod {
       font-size: 10px;
@@ -229,6 +262,8 @@ body {
       height: 30px;
       background-size: contain;
       display: inline-block;
+      margin-right: 10px;
+      vertical-align: middle;
     }
   }
 }
