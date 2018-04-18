@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>predictionVC</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body>
+<div class="headerContainer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="row leftTopContainer">
+          <div class="logo"></div>
+          <div class="header">Bitcoin / BTC</div>
+          <button class="btn btn-default portfolioButton">Add to Portfolio</button>
+          <button class="btn btn-default followButton">Follow</button>
+        </div>
+
+        <div class="row">
+          <div id="col-md-12 myTabs">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs toggleMenu" role="tablist">
+              <li role="presentation" class="active"><a href="#summary" aria-controls="summary" role="tab"
+                                                        data-toggle="tab">Summary</a></li>
+              <li role="presentation"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About</a></li>
+              <li role="presentation"><a href="#finanacial" aria-controls="finanacial" role="tab" data-toggle="tab">Finanacial</a>
+              </li>
+              <li role="presentation"><a href="#ICO" aria-controls="ICO" role="tab" data-toggle="tab">ICO</a></li>
+              <li role="presentation"><a href="#dataRoom" aria-controls="dataRoom" role="tab" data-toggle="tab">Data
+                Room</a></li>
+              <li role="presentation"><a href="#sentimentNews" aria-controls="sentimentNews" role="tab"
+                                         data-toggle="tab">Sentiment & News</a></li>
+              <li role="presentation"><a href="#engineering" aria-controls="engineering" role="tab" data-toggle="tab">Engineering</a>
+              </li>
+              <li role="presentation"><a href="#team" aria-controls="team" role="tab" data-toggle="tab">Team</a></li>
+              <li role="presentation"><a href="#social" aria-controls="social" role="tab" data-toggle="tab">Social</a>
+              </li>
+              <li role="presentation"><a href="#legal" aria-controls="legal" role="tab" data-toggle="tab">Legal</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 rightTopContainer">
+        <div class="mainPrice">$6,754.63</div>
+        <div class="subPriceContainer">
+          <p class="subPriceText">$7,894.14</p>
+          <p class="subPriceDescription">7d prediction</p>
+        </div>
+        <div class="subPriceContainer">
+          <p class="subPriceText">$7,698.82</p>
+          <p class="subPriceDescription">14d prediction</p>
+        </div>
+        <div class="subPriceContainer">
+          <p class="subPriceText">+8%</p>
+          <p class="subPriceDescription">24h change</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane active" id="summary"><a></a></div>
+  <div role="tabpanel" class="tab-pane" id="about">
+    <button class="btn btn-primary suggestionButton">Suggest an edit for Bitcoin</button>
+    <button class="btn btn-default portfolioButton">+ 125 points</button>
+    <p>About Bitcoin</p>
+    <p>Bitcoin is a cryptocurrency and a digital payment system invented by an unknown programmer, or a group of
+      programmers, under the name Satoshi Nakamoto. It was released as open-source software in 2009. The system is
+      peer-to-peer, and transactions take place between users directly.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Um63OQz3bjo" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="finanacial"></div>
+  <div role="tabpanel" class="tab-pane" id="ICO"></div>
+  <div role="tabpanel" class="tab-pane" id="dataRoom"></div>
+  <div role="tabpanel" class="tab-pane" id="sentimentNews"></div>
+  <div role="tabpanel" class="tab-pane" id="engineering"></div>
+  <div role="tabpanel" class="tab-pane" id="team"></div>
+  <div role="tabpanel" class="tab-pane" id="social"></div>
+  <div role="tabpanel" class="tab-pane" id="legal"></div>
+</div>
+
+<div class="headerContainer">
+  <div class="container">
+    <div class="discussionHeader">Discussion</div>
+  </div>
+</div>
+<div class="container">
+  <div class="formDiscussionContainer">
+    <div class="profilePicture"></div>
+    <textarea type="text" placeholder="Ask a question"></textarea>
+    <button class="btn btn-default">Send</button>
+  </div>
+  <div class="commentDiscussionContainer">
+    <div class="discussionWrapper">
+      <div class="profilePicture"></div>
+      <span class="userName">Annie Davies</span>
+      <span class="timePeriod">1 day ago</span>
+    </div>
+    <p class="comment">Jeff Briggs was previously a senior software engineer at Linkedin and Harry Fold was worked in
+      Google’s SMB
+      advertising team. So i’d<br>say collectively they have a good understanding of the advertising space and how to
+      build
+      network focused products. </p>
+  </div>
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>
