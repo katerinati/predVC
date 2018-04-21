@@ -7,6 +7,15 @@ $white: #ffffff;
 $btn-default-border: #21cf98;
 $greyBgColor: #f9f9f9;
 $userProfilePicture: url(../images/userLogo.png);
+$border-radius: 3px;
+$likeLogo: url(../images/likeLogo.png);
+$dislikeLogo: url(../images/dislikeLogo.png);
+$dropdownIcon: url(../images/dropdownIcon.svg);
+$facebookLogo: url(../images/facebookLogo.svg);
+$twitterLogo: url(../images/twitterLogo.svg);
+$redditLogo: url(../images/redditLogo.svg);
+
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -267,5 +276,157 @@ body {
     }
   }
 }
+.teamPage {
 
+  .commentFeatureHeader {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: $brand-primary;
+    margin-top: 42px;
+    margin-bottom: 25px;
+  }
+  .commentFeedWrapper {
+    border-radius: 3px;
+    background-color: rgba($text-color, .02);
+    padding: 10px 7px 10px 16px;
+    margin-bottom: 15px;
+    }
+  .commentFeed {
+    font-size: 14px;
+  }
+  .commentFeedWrapperTop {
+    margin-bottom: 35px;
+  }
+  .commentFeedTag {
+    float: right;
+    border-radius: 3px;
+    background-color: rgba($text-color, 0.05);
+    font-size: 10px;
+    color: rgba($text-color, 0.3);
+    padding: 3px 10px;
+  }
+  .commentFeedUserPicture {
+    background: $userProfilePicture;
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    background-size: contain;
+  }
+  .commentFeedAmount {
+    font-size: 10px;
+    color: $brand-primary;
+  }
+  .commentFeedUserPicture,
+  .commentFeedAmount {
+    vertical-align: middle;
+  }
+  .likesWrapper {
+    display: inline-block;
+    float: right;
+  }
+  .likesAmount {
+    margin-right: 10px;
+  }
+  .likePicture {
+    background: $likeLogo;
+    margin-right: 3px;
+  }
+  .dislikePicture {
+    background: $dislikeLogo;
+  }
+  .likePicture,
+  .dislikePicture {
+    width: 12px;
+    height: 12px;
+  }
+  .likesAmount,
+  .likePicture,
+  .dislikePicture,
+  .commentFeed,
+  .commentFeedTag,
+  .likesWrapper,
+  .commentFeedAmount,
+  .commentFeedUserPicture {
+    display: inline-block;
+  }
+  .commentFeedButtonsWrapper {
+      font-size: 13px;
+      color: $brand-primary;
+      margin-right: 5px;
+      vertical-align: middle;
+      padding: 0 16px;
+      cursor: pointer;
+    .seeMoreDropdownPic {
+      background: $dropdownIcon;
+      width: 9px;
+      height: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    div {
+      float: right;
+    }
+    button {
+      display: inline-block;
+      &:first-child {
+        margin-right: 10px;
+      }
+    }
+
+  }
+  .teamMemberWrapper {
+    border-radius: 10px;
+    border: solid 1px rgba($text-color, .05);
+    padding-top: 20px;
+    padding-left: 25px;
+    .teamMemmberCard {
+      margin-bottom: 20px;
+    }
+    .teamMemmberHeader {
+      font-size: 17px;
+      color: $brand-primary;
+      margin-bottom: 23px;
+    }
+    .teamMemmberProfilePic {
+      background: $userProfilePicture;
+      background-size: contain;
+      width: 30px;
+      height: 30px;
+      margin-right: 15px;
+    }
+    .teamMemmberUserName {
+      font-size: 15px;
+      display: inline-block;
+    }
+    .teamMemmberPosition {
+      font-size: 10px;
+      margin-bottom: 7px;
+    }
+    .teamMemmberProfilePic,
+    .teamMemmberText {
+      display: inline-block;
+    }
+    .facebookLogo {
+      background: $facebookLogo;
+    }
+    .twitterLogo {
+      background: $twitterLogo;
+    }
+    .redditLogo {
+      background: $redditLogo;
+    }
+    .facebookLogo,
+    .twitterLogo,
+    .redditLogo {
+      float: left;
+      margin-right: 15px;
+      vertical-align: middle;
+      width: 15px;
+      height: 15px;
+      background-repeat: no-repeat;
+      background-position: left;
+    }
+  }
+
+}
 
