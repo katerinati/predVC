@@ -56,3 +56,4 @@ function createChart (selector) {
 }
 
 createChart('.chartTeam canvas');
+createChart('.chartSummary canvas');
