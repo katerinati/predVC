@@ -12,9 +12,9 @@ function createChart (selector) {
 
     // The data for our dataset
     data: {
-      labels: ["January", "February", "March", "April", "May", "June", "July"],
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
       datasets: [{
-        label: "History",
+        label: 'History',
         backgroundColor: 'rgba(0, 255, 0, 0.01)',
         borderColor: '#21cf98',
         data: [0, 40, 5, 70, 20, 30, 45],
@@ -28,8 +28,8 @@ function createChart (selector) {
       },
       title: {
         display: false,
-        text: "History",
-        position: "top"
+        text: 'History',
+        position: 'top'
       },
       scales: {
         yAxes: [{
