@@ -3,7 +3,8 @@
   "private": true,
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
-    "chart.js": "^2.7.2"
+    "chart.js": "^2.7.2",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.47"
   },
   "overrides": {
     "bootstrap-sass": {

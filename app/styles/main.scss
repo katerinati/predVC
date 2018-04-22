@@ -14,6 +14,9 @@ $dropdownIcon: url(../images/dropdownIcon.svg);
 $facebookLogo: url(../images/facebookLogo.svg);
 $twitterLogo: url(../images/twitterLogo.svg);
 $redditLogo: url(../images/redditLogo.svg);
+$clipLogo: url(../images/clipLogo.svg);
+$dropdownLogoAcordion: url(../images/dropdownAccordion.svg);
+$dropdownLogoUpAcordion: url(../images/dropdownUpAcordion.svg);
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -48,7 +51,7 @@ textarea {
 }
 
 .btn-primary {
-  border: solid 0.5px $brand-primary;
+  border: solid 1px $brand-primary;
   background-color: transparent;
   color: $brand-primary;
   border-radius: 3px;
@@ -56,7 +59,7 @@ textarea {
   &:active,
   &:active:focus,
   &:focus {
-    border: solid 0.5px $brand-primary;
+    border: solid 1px $brand-primary;
     background-color: transparent;
     color: $brand-primary;
   }
@@ -72,6 +75,9 @@ textarea {
 
 .oh {
   overflow: hidden;
+}
+.mt {
+  margin-top: 40px;
 }
 
 .leftTopContainer {
@@ -223,32 +229,33 @@ textarea {
     height: 47px;
     display: inline-block;
   }
-  ::-webkit-input-placeholder {
-    color: rgba($text-color, .8);
-    font-size: 14px;
-    font-weight: 300;
-  }
-  ::-moz-placeholder {
-    color: rgba($text-color, .8);
-    font-size: 14px;
-    font-weight: 300;
-  }
-  :-ms-input-placeholder {
-    color: rgba($text-color, .8);
-    font-size: 14px;
-    font-weight: 300;
-  }
-  :-moz-placeholder {
-    color: rgba($text-color, .8);
-    font-size: 14px;
-    font-weight: 300;
-  }
+
   button {
     display: block;
     padding: 6px 40px;
     font-size: 15px;
     letter-spacing: 0.3px;
   }
+}
+::-webkit-input-placeholder {
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 300;
+}
+::-moz-placeholder {
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 300;
+}
+:-ms-input-placeholder {
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 300;
+}
+:-moz-placeholder {
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 .commentDiscussionContainer {
@@ -568,19 +575,140 @@ textarea {
 
 }
 .addNewStatementWrapper {
+  margin-bottom: 20px;
   button {
     float: right;
+    padding: 2px 28px;
   }
+  & > button:first-of-type {
+    margin-left: 10px;
+  }
+}
+.addNewStatementHeader {
+  font-size: 17px;
+  color:  rgba($text-color, 0.8);;
 }
 .inputWrapper {
   textarea,
   input {
     width: 100%;
     display: block;
+    border-radius: 3px;
+    border: solid 1px rgba($text-color, 0.03);
+    margin-bottom: 10px;
+  }
+  & > input:last-of-type {
+
+  }
+  & > input:first-of-type,
+  textarea {
+    padding: 14px ;
+  }
+  .clipLogo {
+    background: $clipLogo no-repeat;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 11px;
+    left: 17px;
+  }
+  div {
+    position: relative;
+    input {
+      padding: 8px 14px 8px 40px ;
+
+    }
   }
 }
 .chartSocialWrapper {
   padding-top: 20px;
 }
+.tagWrapper {
+  button {
+    display: block;
+    border: none;
+    margin-right: 10px;
+    padding: 3px 10px;
+  }
+}
+.postButton {
+  padding: 14px 40px;
+  margin-right: 25px;
+}
+.pointsLabel {
+  font-size: 15px;
+  color: $brand-primary;
+}
+.postButtonWrapper {
+  margin-top: 30px;
+}
+.panel {
+  box-shadow: none !important;
+  border: none !important;
+}
+.panel-group .panel {
+  border-bottom: solid 1px rgba($text-color, .05) !important;
+}
+.panel-heading {
+  background-color: transparent !important;
+  border-color: rgba($text-color, .05) !important;
+  position: relative;
+}
+.panel-title,
+.panel-body {
+  font-size: 10px;
+}
+.panel-title a:hover {
+  text-decoration: none;
+}
+hr {
+  border-color: rgba($text-color, .05);
+}
+.collapsed {
+  .triangle {
+    background: $dropdownLogoUpAcordion;
+  }
+}
+.triangle {
+  background: $dropdownLogoAcordion;
+}
+.dropdownAcordionLogo {
+  width: 12px;
+  height: 7px;
+  position: absolute;
+  right: 0;
+  top: 15px;
+}
+.chartSummary {
+  padding: 2% 5%;
+  border-radius: 10px;
+  border: solid 1px rgba($text-color, .05);
+  canvas {
+    width: 100% !important;
+    position: relative;
+    top: 10px;
+  }
+  p {
+    font-size: 17px;
+    color: $brand-primary;
+    text-align: center;
+  }
+  .datePickerWrapper {
+    width: 19%;
+    display: inline-block;
+    float: right;
+  }
+  .dateWrapper {
+    float: right;
+    line-height: 3;
+    font-size: 10px;
+    cursor: pointer;
+    .activeDate {
+      color: $brand-primary;
+    }
+    span {
+      margin-right: 15px;
+    }
 
-
+  }
+}

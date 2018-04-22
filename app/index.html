@@ -11,6 +11,7 @@
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -157,20 +158,44 @@
       </div>
       <div class="row">
         <div class="col-md-12 chartSummary">
-          <canvas></canvas>
+          <p>Compare Statistics</p>
+          <div class="container datePickerWrapper">
+            <div class="row">
+              <div class='col-sm-12'>
+                <input type='text' class="form-control" id='dateFrom' />
+              </div>
+            </div>
+          </div>
+          <div class="container datePickerWrapper">
+            <div class="row">
+              <div class='col-sm-12'>
+                <input type='text' class="form-control" id='dateTo' />
+              </div>
+            </div>
+          </div>
+          <div class="dateWrapper ib">
+            <span>1D</span>
+            <span class="activeDate">1W</span>
+            <span>1M</span>
+            <span>1Y</span>
+          </div>
+          <canvas height="300"></canvas>
         </div>
       </div>
-      <div class="row">
+      <div class="row mt">
         <div class="col-md-7">
           <div class="addNewStatementWrapper">
             <div class="addNewStatementHeader ib">Add a new statement</div>
-            <button class="btn btn-primary btn-xs">Strength</button>
             <button class="btn btn-default btn-xs">Weakness</button>
+            <button class="btn btn-primary btn-xs">Strength</button>
           </div>
           <div class="inputWrapper">
             <input type="text" placeholder="Title">
-            <textarea placeholder="Describe your statement here"></textarea>
-            <input type="text" placeholder="Optional reference link ">
+            <textarea placeholder="Describe your statement here" rows="6"></textarea>
+            <div>
+              <input type="text" placeholder="Optional reference link ">
+              <div class="clipLogo"></div>
+            </div>
           </div>
           <div class="tagWrapper ib">
             <button class="commentFeedTag">Financial</button>
@@ -180,8 +205,143 @@
             <button class="commentFeedTag">Security</button>
             <button class="commentFeedTag">Legal</button>
           </div>
-          <button class="btn btn-default btn-xs">Post</button>
-          <span>+ 25 points</span>
+          <div class="postButtonWrapper">
+            <button class="btn btn-default btn-xs postButton">Post</button>
+            <span class="pointsLabel">+ 25 points</span>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                     aria-expanded="true" aria-controls="collapseOne">
+                    Team
+                    <div class="dropdownAcordionLogo triangle"></div>
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <div class="panelContent">Team experience building a startup or managing an open source projects</div>
+                  <hr>
+                  <div class="panelContent">Core team's technical experience relative to project requirements and
+                    execution roadmap
+                  </div>
+                  <hr>
+                  <div class="panelContent">Reference checks on team members</div>
+                  <hr>
+                  <div class="panelContent">Team experience building a startup or managing an open source projects</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                   aria-expanded="false" aria-controls="collapseTwo">
+                  Reference checks on team members
+                  <div class="dropdownAcordionLogo triangle"></div>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                   aria-expanded="false" aria-controls="collapseThree">
+                  Finanacial
+                  <div class="dropdownAcordionLogo triangle"></div>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFour">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
+                   aria-expanded="false" aria-controls="collapseFour">
+                  Security
+                  <div class="dropdownAcordionLogo triangle"></div>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingFive">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
+                   aria-expanded="false" aria-controls="collapseFive">
+                  Tech
+                  <div class="dropdownAcordionLogo triangle"></div>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingSix">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix"
+                   aria-expanded="false" aria-controls="collapseSix">
+                  Legal
+                  <div class="dropdownAcordionLogo triangle"></div>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+              <div class="panel-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf
+                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea
+                proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim
+                aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -665,6 +825,8 @@
   </div>
 </div>
 
+</div>
+
 <div class="headerContainer">
   <div class="container discussionContainer">
     <div class="discussionHeader">Discussion</div>
@@ -736,6 +898,8 @@
 <!-- bower:js -->
 <script src="/bower_components/jquery/dist/jquery.js"></script>
 <script src="/bower_components/chart.js/dist/Chart.js"></script>
+<script src="/bower_components/moment/moment.js"></script>
+<script src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
