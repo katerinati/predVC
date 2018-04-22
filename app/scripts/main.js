@@ -17,7 +17,7 @@ function createChart (selector) {
         label: "History",
         backgroundColor: 'rgba(0, 255, 0, 0.01)',
         borderColor: '#21cf98',
-        data: [0, 80, 5, 70, 20, 30, 45],
+        data: [0, 40, 5, 70, 20, 30, 45],
       }]
     },
 
@@ -57,3 +57,4 @@ function createChart (selector) {
 
 createChart('.chartTeam canvas');
 createChart('.chartSummary canvas');
+createChart('.chartSocial canvas');

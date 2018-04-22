@@ -418,7 +418,8 @@ textarea {
   }
 
 }
-.teamPage {
+.teamPage,
+.socialPage {
   & > div:first-of-type {
     margin-bottom: 40px;
   }
@@ -577,6 +578,9 @@ textarea {
     width: 100%;
     display: block;
   }
+}
+.chartSocialWrapper {
+  padding-top: 20px;
 }
 
 
