@@ -88,7 +88,6 @@ textarea {
 
 .leftTopContainer {
   padding-top: 30px;
-  margin-bottom: 83px;
   div {
     display: inline-block;
   }
@@ -97,6 +96,9 @@ textarea {
     font-size: 30px;
     letter-spacing: 0.7px;
     margin-right: 19px;
+    @media (max-width: $screen-sm-min)  {
+      margin-right: 5px;
+    }
   }
   .logo {
     background-image: $logoBgImage;
@@ -110,16 +112,29 @@ textarea {
   }
   .portfolioButton {
     margin-right: 10px;
+    @media (max-width: $screen-sm-min)  {
+      margin-right: 5px;
+    }
   }
   .followButton,
   .portfolioButton {
-    font-size: 8px;
+    font-size: 13px;
     vertical-align: sub;
+    @media (max-width: $screen-sm-min)  {
+      font-size: 8px;
+    }
   }
 }
 
+@media (min-width: $screen-md-min) {
+  .toggleMenu {
+    position: relative;
+    top: 95px;
+  }
+}
+
+
 .rightTopContainer {
-  padding-top: 64px;
   text-align: right;
 
   div:first-child {
@@ -150,6 +165,11 @@ textarea {
     font-size: 8px;
     color: rgba($text-color, .2);
     text-transform: uppercase;
+    text-align: center;
+  }
+}
+@media (max-width: $screen-md-min) {
+  .rightTopContainer {
     text-align: center;
   }
 }
@@ -462,7 +482,8 @@ textarea {
 }
 
 .teamPage,
-.socialPage {
+.socialPage,
+.newsPage {
   & > div:first-of-type {
     margin-bottom: 40px;
   }
@@ -538,11 +559,15 @@ textarea {
   .teamScoreLeftContainer {
     float: left;
     width: 50%;
+    @media (max-width: $screen-sm-min) {
+      width: 96%
+    }
+
   }
-  .teamScoreHeader {
-    font-size: 17px;
-    color: $brand-primary;
-  }
+}
+.teamScoreHeader {
+  font-size: 17px;
+  color: $brand-primary;
 }
 
 .progress {
@@ -798,4 +823,28 @@ hr {
   width: 60%;
   margin: 0 auto;
   padding: 110px 0 110px 0
+}
+.news {
+  border-radius: 10px;
+  border: solid 1px rgba(0, 0, 0, 0.05);
+  padding: 20px 55px 26px 30px;
+  margin-top: 20px;
+  margin-bottom: 23px;
+  h4 {
+    margin-top: 0;
+    span {
+      font-size: 8px;
+      font-weight: normal;
+      color: rgba($text-color, .2);
+    }
+  }
+  img {
+    width: 100%;
+  }
+}
+@media (max-width: $screen-md-min) {
+  .lockedPadLogo {
+    text-align: center;
+    margin-top: 30px;
+  }
 }

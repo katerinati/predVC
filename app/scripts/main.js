@@ -59,7 +59,6 @@ function createChart(selector, settings) {
   var ctx = document.querySelector(selector).getContext('2d');
   var chart = new Chart(ctx, settings);
 }
-
 createChart('.chartTeam canvas');
 createChart('.chartSummary canvas', {
   data: {
@@ -121,6 +120,8 @@ createChart('.chartSummary canvas', {
   }
 });
 createChart('.chartSocial canvas');
+createChart('.chartNews canvas');
+
 
 $(function () {
   $('#dateFrom').datetimepicker({
