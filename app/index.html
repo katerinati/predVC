@@ -11,7 +11,8 @@
 
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+  <link rel="stylesheet"
+        href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -83,7 +84,7 @@
 
     <div role="tabpanel" class="tab-pane active" id="summary">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6 ">
           <div class="commentFeatureHeader">Strengths</div>
           <div class=" commentFeedWrapper">
             <div class="row">
@@ -107,12 +108,56 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row commentFeedDiscussionWrapper">
               <div class="col-md-1">
                 <div class="commentFeedUserPicture big"></div>
               </div>
-              <div class="col-md-11">
+              <div class="col-md-11 textareaWrapper">
                 <textarea class="addComment" placeholder="Add a comment" rows="1"></textarea>
+              </div>
+
+            </div>
+            <div class="commentDiscussionContainer col-md-12">
+              <div class="discussionWrapper">
+                <div class="smallProfilePicture"></div>
+                <span class="userName">Annie Davies</span>
+                <span class="timePeriod">1 day ago</span>
+              </div>
+              <p class="comment">Jeff Briggs was previously a senior software engineer at Linkedin and Harry Fold
+                was worked in Google’s SMB advertising team. So i’d say collectively they have a good understanding of
+                the advertising space and how to build network focused products. </p>
+            </div>
+            <div class="commentDiscussionContainer col-md-12">
+              <div class="discussionWrapper">
+                <div class="smallProfilePicture"></div>
+                <span class="userName">Annie Davies</span>
+                <span class="timePeriod">1 day ago</span>
+              </div>
+              <p class="comment">Jeff Briggs was previously a senior software engineer at Linkedin and Harry Fold
+                was worked in Google’s SMB advertising team. So i’d say collectively they have a good understanding of
+                the advertising space and how to build network focused products. </p>
+            </div>
+          </div>
+          <div class=" commentFeedWrapper">
+            <div class="row">
+              <div class="col-xs-10">
+                <div class="commentFeed">Has the most well known brand compared to any other cryptocurrency</div>
+              </div>
+              <div class="col-xs-2">
+                <div class="commentFeedTag">Team</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-9">
+                <div class="commentFeedUserPicture"></div>
+                <span class="commentFeedAmount">10 comments</span>
+              </div>
+              <div class="col-xs-3 oh">
+                <div class="likesWrapper">
+                  <div class="likesAmount">7</div>
+                  <div class="likePicture"></div>
+                  <div class="dislikePicture"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -162,14 +207,14 @@
           <div class="container datePickerWrapper">
             <div class="row">
               <div class='col-sm-12'>
-                <input type='text' class="form-control" id='dateFrom' />
+                <input type='text' class="form-control" id='dateFrom'/>
               </div>
             </div>
           </div>
           <div class="container datePickerWrapper">
             <div class="row">
               <div class='col-sm-12'>
-                <input type='text' class="form-control" id='dateTo' />
+                <input type='text' class="form-control" id='dateTo'/>
               </div>
             </div>
           </div>
@@ -181,8 +226,38 @@
           </div>
           <canvas height="300"></canvas>
         </div>
+        <div class="col-md-12 chartSummaryOverlay">
+          <div class="row">
+            <div class="col-md-10">
+              <div class="chartSummaryOverlayWrapper">
+                <div class="row">
+                  <div class="col-md-9">
+                    <h3>Sign Up to see in-depth data and
+                      receive market movement updates</h3>
+                    <p>To create watchlists, view your personal dashboard, compete in trading competitions and connect with
+                      other members.</p>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="text" placeholder="Your Email">
+                      </div>
+                      <div class="col-md-6">
+                        <button class="btn btn-default btn-xs">Sign Up</button>
+                      </div>
+                    </div>
+
+                    <a>Already have an account? Log in. </a>
+                  </div>
+                  <div class="col-md-2 col-md-offset-1">
+                    <img src="images/lockedPadlockLogo.png" alt="Lock">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
-      <div class="row mt">
+      <div class="row mt addNewStatementContainer">
         <div class="col-md-7">
           <div class="addNewStatementWrapper">
             <div class="addNewStatementHeader ib">Add a new statement</div>
@@ -840,6 +915,10 @@
         <div class="profilePicture"></div>
         <textarea type="text" placeholder="Ask a question"></textarea>
         <button class="btn btn-default">Send</button>
+      </div>
+      <div class="registerForm">
+        <div class="profilePicture vam ib"></div>
+        <p class="vam ib"><a>Sign Up</a> or <a>Log In</a> to take part of discussion.</p>
       </div>
       <div class="commentDiscussionContainer">
         <div class="discussionWrapper">
