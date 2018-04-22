@@ -320,9 +320,11 @@ textarea {
 .commentFeedTag {
   float: right;
   border-radius: 3px;
-  background-color: rgba($text-color, 0.05);
+  &:not(.btn-default) {
+    background-color: rgba($text-color, 0.05);
+    color: rgba($text-color, 0.3);
+  }
   font-size: 10px;
-  color: rgba($text-color, 0.3);
   padding: 3px 10px;
 }
 
@@ -551,6 +553,18 @@ textarea {
   border: none;
   padding: 5px;
 
+}
+.addNewStatementWrapper {
+  button {
+    float: right;
+  }
+}
+.inputWrapper {
+  textarea,
+  input {
+    width: 100%;
+    display: block;
+  }
 }
 
 
