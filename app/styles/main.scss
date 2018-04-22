@@ -307,6 +307,13 @@ textarea {
   background-color: rgba($text-color, .02);
   padding: 10px 7px 10px 16px;
   margin-bottom: 15px;
+  & > div:first-of-type {
+    margin-bottom: 15px;
+  }
+  .commentFeedTag {
+    position: relative;
+    top: -5px;
+  }
 }
 
 .commentFeed {
@@ -372,6 +379,7 @@ textarea {
 .dislikePicture {
   width: 12px;
   height: 12px;
+  cursor: pointer;
 }
 
 .likesAmount,
@@ -410,7 +418,11 @@ textarea {
   }
 
 }
-
+.teamPage {
+  & > div:first-of-type {
+    margin-bottom: 40px;
+  }
+}
 .teamMemberWrapper {
   padding-top: 20px;
   & > div {
