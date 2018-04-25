@@ -132,6 +132,13 @@ textarea {
     top: 95px;
   }
 }
+@media (max-width: $screen-lg-min) {
+  .toggleMenu {
+    display: flex;
+    overflow-x: auto;
+  }
+
+}
 
 
 .rightTopContainer {
@@ -197,6 +204,12 @@ textarea {
 
 .nav-tabs {
   border-bottom: none !important;
+  @media (max-width: $screen-lg-min) {
+    li {
+      white-space: nowrap;
+
+    }
+  }
 }
 
 .suggestionButton {
