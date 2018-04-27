@@ -923,6 +923,7 @@ hr {
   border: solid 1px rgba($text-color, .05);
   height: 40px;
   width: 100%;
+  padding: 15px;
 }
 .modal-footer,
 .modal-body {
@@ -930,28 +931,24 @@ hr {
     color: rgba($text-color, .4);
     font-size: 13px;
     font-weight: 300;
-    padding-left: 10px;
   }
 
   ::-moz-placeholder {
     color: rgba($text-color, .4);
     font-size: 13px;
     font-weight: 300;
-    padding-left: 10px;
   }
 
   :-ms-input-placeholder {
     color: rgba($text-color, .4);
     font-size: 13px;
     font-weight: 300;
-    padding-left: 10px;
   }
 
   :-moz-placeholder {
     color: rgba($text-color, .4);
     font-size: 13px;
     font-weight: 300;
-    padding-left: 10px;
   }
 }
 
