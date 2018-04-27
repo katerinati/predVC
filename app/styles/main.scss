@@ -17,6 +17,11 @@ $redditLogo: url(../images/redditLogo.svg);
 $clipLogo: url(../images/clipLogo.svg);
 $dropdownLogoAcordion: url(../images/dropdownAccordion.svg);
 $dropdownLogoUpAcordion: url(../images/dropdownUpAcordion.svg);
+$closeIcon: url(../images/closeIcon.svg);
+$borderRadius: 3px;
+$overlayBgColor: #b3b3b3;
+
+
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -181,7 +186,8 @@ textarea {
   }
 }
 
-.toggleMenu {
+.toggleMenu,
+.toggleMenuOverlaySuggestionButton {
   li a {
     color: rgba($text-color, .7) !important;
     font-size: 12px;
@@ -859,5 +865,134 @@ hr {
   .lockedPadLogo {
     text-align: center;
     margin-top: 30px;
+  }
+}
+.closeIcon {
+  background: $closeIcon no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 6px;
+  right: 9px;
+}
+.modal {
+  text-align: left;
+  background-color: rgba($overlayBgColor, .8);
+}
+.modal-header {
+  h4 {
+    font-size: 27px;
+    color: $text-color;
+    margin-bottom: 55px;
+  }
+  li {
+    margin-right: 35px;
+  }
+  li a {
+    padding-left: 0!important;
+    padding-right: 0 !important;
+  }
+}
+.modal-header {
+  padding-top: 70px;
+  padding-bottom: 0;
+}
+.modal-header,
+.modal-body,
+.modal-footer {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.modal-content {
+  position:  relative;
+  border-radius: 0;
+  border: 0;
+}
+.overlayWrapper {
+  margin: 55px 0;
+  .overlayLeftWRapper {
+    padding-left: 0;
+  }
+  .dropdownAcordionLogo {
+    right: 17px;
+    top: 36px;
+  }
+}
+.overlayInput {
+  border-radius: $borderRadius;
+  border: solid 1px rgba($text-color, .05);
+  height: 40px;
+  width: 100%;
+}
+.modal-footer,
+.modal-body {
+  ::-webkit-input-placeholder {
+    color: rgba($text-color, .4);
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+
+  ::-moz-placeholder {
+    color: rgba($text-color, .4);
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+
+  :-ms-input-placeholder {
+    color: rgba($text-color, .4);
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+
+  :-moz-placeholder {
+    color: rgba($text-color, .4);
+    font-size: 13px;
+    font-weight: 300;
+    padding-left: 10px;
+  }
+}
+
+.overlayHeader {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgba($text-color, .7);
+  margin-bottom: 5px;
+}
+.overlaySubText {
+  font-size: 9px;
+  color: rgba($text-color, .7);
+  margin-top: 3px;
+}
+.overlayHeader,
+.overlaySubText {
+  padding-left: 15px;
+}
+.overlayInputWrapper {
+  margin-bottom: 25px;
+  position: relative;
+}
+.modal-footer {
+  text-align: left!important;
+  button {
+    padding: 12px 103px;
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+}
+
+@media (min-width: $screen-md-min ) {
+  .modal-dialog {
+    width:780px;
+  }
+  .overlayRightWrapper {
+    padding-left: 30px;
+  }
+}
+@media (max-width: $screen-sm-min ) {
+  .overlayRightWrapper {
+    padding-left: 0 !important;
   }
 }
