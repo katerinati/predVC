@@ -90,6 +90,9 @@ textarea {
 .vam {
   vertical-align: middle;
 }
+.hidden {
+  display: none;
+}
 
 .leftTopContainer {
   padding-top: 30px;
@@ -236,6 +239,39 @@ textarea {
 .aboutPannelButtonWrapper {
   margin-top: 20px;
   text-align: right;
+  .modal {
+    text-align: left;
+    background-color: rgba($overlayBgColor, .8);
+  }
+  .modal-header {
+    h4 {
+      font-size: 27px;
+      color: $text-color;
+      margin-bottom: 55px;
+    }
+    li {
+      margin-right: 35px;
+    }
+    li a {
+      padding-left: 0!important;
+      padding-right: 0 !important;
+    }
+  }
+  .modal-header {
+    padding-top: 70px;
+    padding-bottom: 0;
+  }
+  .modal-header,
+  .modal-body,
+  .modal-footer {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .modal-content {
+    position:  relative;
+    border-radius: 0;
+    border: 0;
+  }
 }
 
 #about {
@@ -875,39 +911,7 @@ hr {
   top: 6px;
   right: 9px;
 }
-.modal {
-  text-align: left;
-  background-color: rgba($overlayBgColor, .8);
-}
-.modal-header {
-  h4 {
-    font-size: 27px;
-    color: $text-color;
-    margin-bottom: 55px;
-  }
-  li {
-    margin-right: 35px;
-  }
-  li a {
-    padding-left: 0!important;
-    padding-right: 0 !important;
-  }
-}
-.modal-header {
-  padding-top: 70px;
-  padding-bottom: 0;
-}
-.modal-header,
-.modal-body,
-.modal-footer {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-.modal-content {
-  position:  relative;
-  border-radius: 0;
-  border: 0;
-}
+
 .overlayWrapper {
   margin: 55px 0;
   .overlayLeftWRapper {
@@ -993,3 +997,77 @@ hr {
     padding-left: 0 !important;
   }
 }
+.dataRoomWrapper {
+  margin-bottom: 65px;
+  &:last-of-type {
+    margin-bottom: 150px;
+  }
+}
+.dataRoomButtonsTopWrapper {
+  margin: 40px 0;
+  .dropdown {
+    display: inline-block;
+    .btn-default {
+      padding: 5px 84px 5px 15px;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      padding: 5px 20px;
+    }
+  }
+  .addFileButton {
+    float: right;
+  }
+}
+.dataRoomHeaderTextWrapper {
+  margin-bottom: 15px;
+  p,
+  h3 {
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 12px;
+    color: rgba($text-color, .5);
+    margin-left: 10px;
+  }
+}
+.dataRoomCardWrapper,
+.dataRoomDescriptionText {
+  border-radius: 3px;
+}
+.dataRoomCardWrapper {
+  background-color: rgba($text-color, .02);
+  margin-bottom: 25px;
+}
+.dataRoomDescriptionText {
+  background-color: rgba($text-color, .05);
+  font-size: 10px;
+  color: rgba($text-color, .3);
+  padding: 5px 10px;
+}
+.dataRoomCardContentWrapper {
+  border-bottom: solid 1px rgba($text-color, .04);
+  padding: 20px 15px 5px 0;
+  .linkWrapper {
+    position: relative;
+    color: $brand-primary;
+    padding-left: 50px;
+  }
+  .clipLogo {
+    background: $clipLogo no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 28px;
+    top: 3px;
+  }
+  .commentsWrapper {
+    padding-left: 22px;
+  }
+}
+.dataRoomButtonsBottomWrapper {
+  float: right;
+}
+
