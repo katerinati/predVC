@@ -1148,11 +1148,35 @@ hr {
   textarea {
     border-radius: 3px;
     border: solid 1px rgba($text-color, .05);
-    color: rgba($text-color, .4);
     padding-top: 15px;
     padding-left: 15px;
     font-size: 13px;
     margin-bottom: 25px;
+    color: rgba($text-color, .4);
+
+  }
+  ::-webkit-input-placeholder {
+    color: rgba($text-color, .4);
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  ::-moz-placeholder {
+    color: rgba($text-color, .4);
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  :-ms-input-placeholder {
+    color: rgba($text-color, .4);
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  :-moz-placeholder {
+    color: rgba($text-color, .4);
+    font-size: 14px;
+    font-weight: 300;
   }
   .closeIcon {
     display: block;
