@@ -586,21 +586,43 @@
                 <li><a href="#">Separated link</a></li>
               </ul>
             </div>
-            <button class="btn btn-default btn-primary addFileButton">+ Add File(s)</button>
-            <div class="modal fade" tabindex="-1" role="dialog">
+            <button class="btn btn-default btn-primary addFileButton" data-toggle="modal" data-target="#addFileDataRoomOverlay">+ Add File(s)</button>
+            <div class="modal fade" tabindex="-1" role="dialog" id="addFileDataRoomOverlay">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
                   <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                      aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Modal title</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><div class="closeIcon" aria-hidden="true"></div>
+                    </button>
+                    <h2 class="modal-title">Add File(s)</h2>
+                    <p>Somekind of text here that explains something about adding files. </p>
                   </div>
                   <div class="modal-body">
-                    <p>One fine body&hellip;</p>
+                    <div class="dropdown">
+                      <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Topic
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        First topic
+                      </ul>
+                    </div>
+                    <div class="dropdown">
+                      <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Section
+                        <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dLabel">
+                        Section
+                      </ul>
+                    </div>
+                    <div class="dragAndDropWrapper">
+                      <div class="dragAndDropLogo"></div>
+                      <p>Drag and drop your files here or
+                        <a>browse</a> for files.</p>
+                    </div>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Upload</button>
                   </div>
                 </div>
               </div>
@@ -821,7 +843,13 @@
             <button class="btn btn-default btn-primary btn-xs">Request File</button>
           </div>
         </div>
-
+      </div>
+      <div class="requestFilePopUp col-md-4">
+        <div class="closeIcon"></div>
+        <h2>Request File</h2>
+        <p>A little description to explain why to request a file and what to expect and so on. </p>
+        <textarea name="" id="" cols="33" rows="10">Description</textarea>
+        <button class="btn btn-default btn-default">Send Request</button>
       </div>
     </div>
     <div role="tabpanel" class="tab-pane" id="sentimentNews">
