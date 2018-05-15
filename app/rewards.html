@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>predictionVC</title>
+
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet"
+        href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <h1 class="rewardsHeader">Rewards</h1>
+    <div class="col-md-1">
+      <div class="rewardsIconNewbie rewardsIcon"></div>
+    </div>
+    <div class="col-md-1">
+      <div class="rewardsIconExplorer rewardsIcon"></div>
+    </div>
+    <div class="col-md-1">
+      <div class="rewardsIconJunior rewardsIcon notCompleted"></div>
+    </div>
+    <div class="col-md-1">
+      <div class="rewardsIconKnight rewardsIcon notCompleted"></div>
+    </div>
+    <div class="col-md-1">
+      <div class="rewardsIconSenior rewardsIcon notCompleted"></div>
+    </div>
+    <div class="col-md-1">
+      <div class="rewardsIconHodler rewardsIcon notCompleted"></div>
+    </div>
+    <div class="col-md-1">
+      <div class="rewardsIconMentor rewardsIcon notCompleted"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-1">
+      <p class="rewardsStatusText completed">Newbie</p>
+    </div>
+    <div class="col-md-1">
+      <p class="rewardsStatusText completed">Explorer</p>
+    </div>
+    <div class="col-md-1">
+      <p class="rewardsStatusText">Junior</p>
+    </div>
+    <div class="col-md-1">
+      <p class="rewardsStatusText">Knight of Data</p>
+    </div>
+    <div class="col-md-1">
+      <p class="rewardsStatusText">Senior</p>
+    </div>
+    <div class="col-md-1">
+      <p class="rewardsStatusText">Hodler</p>
+    </div>
+    <div class="col-md-1">
+      <p class="rewardsStatusText">Mentor</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Points Ledger</h4>
+      <table class="table">
+        <thead>
+        <tr>
+          <td>
+            Action
+          </td>
+          <td>
+            Amount
+          </td>
+          <td>
+            Time
+          </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>
+            Invited new user by email
+          </td>
+          <td>100</td>
+          <td>13. March 2018</td>
+        </tr>
+        <tr>
+          <td>
+            Invited new user by email
+          </td>
+          <td>100</td>
+          <td>13. March 2018</td>
+        </tr>
+        <tr>
+          <td>
+            Updated asset article Bitcoin and the Beauty
+          </td>
+          <td>100</td>
+          <td>13. March 2018</td>
+        </tr>
+        <tr>
+          <td>
+            Added a new project Litecoin
+          </td>
+          <td>100</td>
+          <td>13. March 2018</td>
+        </tr>
+        <tr>
+          <td>
+            Invited new user by email
+          </td>
+          <td>100</td>
+          <td>13. March 2018</td>
+        </tr>
+        <tr>
+          <td>
+            Invited new user by email
+          </td>
+          <td>100</td>
+          <td>13. March 2018</td>
+        </tr>
+        <tr>
+          <td>
+            Invited new user by email
+          </td>
+          <td>100</td>
+          <td>13. March 2018</td>
+        </tr>
+        <tr>
+          <td>
+            Answered a community question
+          </td>
+          <td>100</td>
+          <td>13. March 2018</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-6">
+      <h4>
+        Earn More Points
+      </h4>
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                 aria-controls="collapseOne">
+                Rating projects
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <p>Add ratings to projects and earn <span class="highlightedText">150 points</span> for each rating.</p>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                 aria-controls="collapseOne">
+                Adding new projects
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <p>Add ratings to projects and earn <span class="highlightedText">150 points</span> for each rating.</p>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                 aria-controls="collapseOne">
+                Updating project information
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <p>Add ratings to projects and earn <span class="highlightedText">150 points</span> for each rating.</p>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                 aria-controls="collapseOne">
+                Inviting other users to the platform
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <p>Add ratings to projects and earn <span class="highlightedText">150 points</span> for each rating.</p>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                 aria-controls="collapseOne">
+                Asking or answering community questions
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <p>Add ratings to projects and earn <span class="highlightedText">150 points</span> for each rating.</p>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+              <div>
+                <span class="highlightedText">+150</span> Rate currency <span class="highlightedText">Ethereum</span>
+                <button class="btn btn-default btn-xs">Rate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/chart.js/dist/Chart.js"></script>
+<script src="/bower_components/moment/moment.js"></script>
+<script src="/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/plugins.js -->
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/affix.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/alert.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/modal.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/transition.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/button.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/popover.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/carousel.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
+<script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

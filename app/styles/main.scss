@@ -21,8 +21,13 @@ $closeIcon: url(../images/closeIcon.svg);
 $borderRadius: 3px;
 $overlayBgColor: #b3b3b3;
 $dragAndDropLogo: url(../images/dragAndDropLogo.svg);
-
-
+$newbieLogo:  url(../images/newbieLogo.png);
+$explorerLogo: url(../images/explorerLogo.png);
+$juniorLogo: url(../images/juniorLogo.png);
+$knightOfDataLogo: url(../images/knightOfData.png);
+$seniorLogo: url(../images/seniorLogo.png);
+$hodlerLogo: url(../images/hodlerLogo.png);
+$mentorLogo: url(../images/mentorLogo.png);
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -771,51 +776,50 @@ textarea {
 .postButtonWrapper {
   margin-top: 30px;
 }
-
-.panel {
-  box-shadow: none !important;
-  border: none !important;
-}
-
-.panel-group .panel {
-  border-bottom: solid 1px rgba($text-color, .05) !important;
-}
-
-.panel-heading {
-  background-color: transparent !important;
-  border-color: rgba($text-color, .05) !important;
-  position: relative;
-}
-
-.panel-title,
-.panel-body {
-  font-size: 10px;
-}
-
-.panel-title a:hover {
-  text-decoration: none;
-}
-
-hr {
-  border-color: rgba($text-color, .05);
-}
-
-.collapsed {
-  .triangle {
-    background: $dropdownLogoUpAcordion;
+.addNewStatementContainer {
+  .panel {
+    box-shadow: none !important;
+    border: none !important;
   }
-}
 
-.triangle {
-  background: $dropdownLogoAcordion;
-}
+  .panel-group .panel {
+    border-bottom: solid 1px rgba($text-color, .05) !important;
+  }
 
-.dropdownAcordionLogo {
-  width: 12px;
-  height: 7px;
-  position: absolute;
-  right: 0;
-  top: 15px;
+  .panel-heading {
+    background-color: transparent !important;
+    border-color: rgba($text-color, .05) !important;
+    position: relative;
+  }
+
+  .panel-title,
+  .panel-body {
+    font-size: 10px;
+  }
+
+  .panel-title a:hover {
+    text-decoration: none;
+  }
+  hr {
+    border-color: rgba($text-color, .05);
+  }
+  .collapsed {
+    .triangle {
+      background: $dropdownLogoUpAcordion;
+    }
+  }
+
+  .triangle {
+    background: $dropdownLogoAcordion;
+  }
+
+  .dropdownAcordionLogo {
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    right: 0;
+    top: 15px;
+  }
 }
 
 .chartSummary {
@@ -1186,4 +1190,53 @@ hr {
     display: block;
     padding: 12px 90px;
   }
+}
+.rewardsIconNewbie {
+  background: $newbieLogo;
+  width: 45px;
+  height: 50px;
+}
+.rewardsIconExplorer {
+  background: $explorerLogo;
+  width: 53px;
+  height: 51px;
+}
+.rewardsIconJunior {
+  background: $juniorLogo;
+  width: 35px;
+  height: 60px;
+}
+.rewardsIconKnight {
+  background: $knightOfDataLogo;
+  width: 48px;
+  height: 60px;
+}
+.rewardsIconSenior {
+  background: $seniorLogo;
+  width: 62px;
+  height: 52px;
+}
+.rewardsIconHodler {
+  background: $hodlerLogo;
+  width: 56px;
+  height: 55px;
+}
+.rewardsIconMentor {
+  background: $mentorLogo;
+  width: 56px;
+  height: 60px;
+}
+.rewardsStatusText {
+  margin-top: 23px;
+}
+.notCompleted {
+ opacity: 0.2;
+}
+.rewardsStatusText {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgba($text-color, .2);
+}
+.completed {
+  color: $brand-primary;
 }
