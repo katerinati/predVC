@@ -21,13 +21,15 @@ $closeIcon: url(../images/closeIcon.svg);
 $borderRadius: 3px;
 $overlayBgColor: #b3b3b3;
 $dragAndDropLogo: url(../images/dragAndDropLogo.svg);
-$newbieLogo:  url(../images/newbieLogo.png);
+$newbieLogo: url(../images/newbieLogo.png);
 $explorerLogo: url(../images/explorerLogo.png);
 $juniorLogo: url(../images/juniorLogo.png);
 $knightOfDataLogo: url(../images/knightOfData.png);
 $seniorLogo: url(../images/seniorLogo.png);
 $hodlerLogo: url(../images/hodlerLogo.png);
 $mentorLogo: url(../images/mentorLogo.png);
+$dropdownRightAccordion: url(../images/dropdownRightAccordion.svg);
+$progressBarArrowLogo: url(../images/progressBarArrow.png);
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -93,9 +95,11 @@ textarea {
 .mt {
   margin-top: 40px;
 }
+
 .vam {
   vertical-align: middle;
 }
+
 .hidden {
   display: none;
 }
@@ -110,7 +114,7 @@ textarea {
     font-size: 30px;
     letter-spacing: 0.7px;
     margin-right: 19px;
-    @media (max-width: $screen-sm-min)  {
+    @media (max-width: $screen-sm-min) {
       margin-right: 5px;
     }
   }
@@ -126,7 +130,7 @@ textarea {
   }
   .portfolioButton {
     margin-right: 10px;
-    @media (max-width: $screen-sm-min)  {
+    @media (max-width: $screen-sm-min) {
       margin-right: 5px;
     }
   }
@@ -134,7 +138,7 @@ textarea {
   .portfolioButton {
     font-size: 13px;
     vertical-align: sub;
-    @media (max-width: $screen-sm-min)  {
+    @media (max-width: $screen-sm-min) {
       font-size: 8px;
     }
   }
@@ -146,6 +150,7 @@ textarea {
     top: 95px;
   }
 }
+
 @media (max-width: $screen-lg-min) {
   .toggleMenu {
     display: flex;
@@ -153,7 +158,6 @@ textarea {
   }
 
 }
-
 
 .rightTopContainer {
   text-align: right;
@@ -189,6 +193,7 @@ textarea {
     text-align: center;
   }
 }
+
 @media (max-width: $screen-md-min) {
   .rightTopContainer {
     text-align: center;
@@ -259,7 +264,7 @@ textarea {
       margin-right: 35px;
     }
     li a {
-      padding-left: 0!important;
+      padding-left: 0 !important;
       padding-right: 0 !important;
     }
   }
@@ -274,7 +279,7 @@ textarea {
     padding-right: 70px;
   }
   .modal-content {
-    position:  relative;
+    position: relative;
     border-radius: 0;
     border: 0;
   }
@@ -320,6 +325,7 @@ textarea {
     letter-spacing: 0.3px;
   }
 }
+
 .registerForm {
   margin-bottom: 40px;
   p {
@@ -327,12 +333,14 @@ textarea {
     margin-left: 5px;
   }
 }
+
 .profilePicture {
   background: $userProfilePicture;
   width: 47px;
   height: 47px;
   display: inline-block;
 }
+
 ::-webkit-input-placeholder {
   color: rgba($text-color, .8);
   font-size: 14px;
@@ -399,7 +407,6 @@ textarea {
     }
   }
 }
-
 
 .commentFeatureHeader {
   font-size: 13px;
@@ -500,9 +507,11 @@ textarea {
 .commentFeedUserPicture {
   display: inline-block;
 }
+
 #summary .commentFeedButtonsWrapper {
   margin-bottom: 75px;
 }
+
 .commentFeedButtonsWrapper {
   font-size: 13px;
   color: $brand-primary;
@@ -626,6 +635,7 @@ textarea {
 
   }
 }
+
 .teamScoreHeader {
   font-size: 17px;
   color: $brand-primary;
@@ -698,9 +708,11 @@ textarea {
   padding: 5px;
 
 }
+
 .addNewStatementContainer {
   margin-bottom: 150px;
 }
+
 .addNewStatementWrapper {
   margin-bottom: 20px;
   button {
@@ -776,6 +788,7 @@ textarea {
 .postButtonWrapper {
   margin-top: 30px;
 }
+
 .addNewStatementContainer {
   .panel {
     box-shadow: none !important;
@@ -808,11 +821,6 @@ textarea {
       background: $dropdownLogoUpAcordion;
     }
   }
-
-  .triangle {
-    background: $dropdownLogoAcordion;
-  }
-
   .dropdownAcordionLogo {
     width: 12px;
     height: 7px;
@@ -820,6 +828,11 @@ textarea {
     right: 0;
     top: 15px;
   }
+
+}
+
+.triangle {
+  background: $dropdownLogoAcordion;
 }
 
 .chartSummary {
@@ -856,6 +869,7 @@ textarea {
 
   }
 }
+
 .chartSummaryOverlay {
   border-radius: 10px;
   border: solid 1px rgba($text-color, .05);
@@ -879,11 +893,13 @@ textarea {
     margin-bottom: 8px;
   }
 }
+
 .chartSummaryOverlayWrapper {
   width: 60%;
   margin: 0 auto;
   padding: 110px 0 110px 0
 }
+
 .news {
   border-radius: 10px;
   border: solid 1px rgba(0, 0, 0, 0.05);
@@ -902,12 +918,14 @@ textarea {
     width: 100%;
   }
 }
+
 @media (max-width: $screen-md-min) {
   .lockedPadLogo {
     text-align: center;
     margin-top: 30px;
   }
 }
+
 .closeIcon {
   background: $closeIcon no-repeat;
   width: 20px;
@@ -927,6 +945,7 @@ textarea {
     top: 36px;
   }
 }
+
 .overlayInput {
   border-radius: $borderRadius;
   border: solid 1px rgba($text-color, .05);
@@ -934,6 +953,7 @@ textarea {
   width: 100%;
   padding: 15px;
 }
+
 .modal-footer,
 .modal-body {
   ::-webkit-input-placeholder {
@@ -967,21 +987,25 @@ textarea {
   color: rgba($text-color, .7);
   margin-bottom: 5px;
 }
+
 .overlaySubText {
   font-size: 9px;
   color: rgba($text-color, .7);
   margin-top: 3px;
 }
+
 .overlayHeader,
 .overlaySubText {
   padding-left: 15px;
 }
+
 .overlayInputWrapper {
   margin-bottom: 25px;
   position: relative;
 }
+
 .modal-footer {
-  text-align: left!important;
+  text-align: left !important;
   button {
     padding: 12px 103px;
     margin-top: 60px;
@@ -989,25 +1013,28 @@ textarea {
   }
 }
 
-@media (min-width: $screen-md-min ) {
+@media (min-width: $screen-md-min) {
   .modal-dialog {
-    width:780px;
+    width: 780px;
   }
   .overlayRightWrapper {
     padding-left: 30px;
   }
 }
-@media (max-width: $screen-sm-min ) {
+
+@media (max-width: $screen-sm-min) {
   .overlayRightWrapper {
     padding-left: 0 !important;
   }
 }
+
 .dataRoomWrapper {
   margin-bottom: 65px;
   &:last-of-type {
     margin-bottom: 150px;
   }
 }
+
 .dataRoomButtonsTopWrapper {
   margin: 40px 0;
   .dropdown {
@@ -1024,6 +1051,7 @@ textarea {
     float: right;
   }
 }
+
 .dataRoomHeaderTextWrapper {
   margin-bottom: 15px;
   p,
@@ -1038,20 +1066,24 @@ textarea {
     margin-left: 10px;
   }
 }
+
 .dataRoomCardWrapper,
 .dataRoomDescriptionText {
   border-radius: 3px;
 }
+
 .dataRoomCardWrapper {
   background-color: rgba($text-color, .02);
   margin-bottom: 25px;
 }
+
 .dataRoomDescriptionText {
   background-color: rgba($text-color, .05);
   font-size: 10px;
   color: rgba($text-color, .3);
   padding: 5px 10px;
 }
+
 .dataRoomCardContentWrapper {
   border-bottom: solid 1px rgba($text-color, .04);
   padding: 20px 15px 5px 0;
@@ -1072,6 +1104,7 @@ textarea {
     padding-left: 22px;
   }
 }
+
 .dataRoomButtonsBottomWrapper {
   float: right;
 }
@@ -1144,6 +1177,7 @@ textarea {
     }
   }
 }
+
 .requestFilePopUp {
   position: relative;
   background-color: #ffffff;
@@ -1191,52 +1225,200 @@ textarea {
     padding: 12px 90px;
   }
 }
+
+
+
+
+
 .rewardsIconNewbie {
   background: $newbieLogo;
   width: 45px;
   height: 50px;
 }
+
 .rewardsIconExplorer {
   background: $explorerLogo;
   width: 53px;
   height: 51px;
 }
+
 .rewardsIconJunior {
   background: $juniorLogo;
   width: 35px;
   height: 60px;
 }
+
 .rewardsIconKnight {
   background: $knightOfDataLogo;
   width: 48px;
   height: 60px;
 }
+
 .rewardsIconSenior {
   background: $seniorLogo;
   width: 62px;
   height: 52px;
 }
+
 .rewardsIconHodler {
   background: $hodlerLogo;
   width: 56px;
   height: 55px;
 }
+
 .rewardsIconMentor {
   background: $mentorLogo;
   width: 56px;
   height: 60px;
 }
+
 .rewardsStatusText {
   margin-top: 23px;
 }
+
 .notCompleted {
- opacity: 0.2;
+  opacity: 0.2;
 }
+
 .rewardsStatusText {
   font-size: 10px;
   text-transform: uppercase;
   color: rgba($text-color, .2);
 }
+
 .completed {
   color: $brand-primary;
+}
+.rewardsTableWrapper {
+  thead {
+    td {
+      font-size: 10px;
+      color: rgba($text-color, .3);
+      text-transform: uppercase;
+    }
+  }
+}
+.progressBarWrapper {
+  position: absolute;
+  bottom: -41px;
+  width: 100%;
+  left: 0;
+  .progress {
+    padding-top: 10px;
+  }
+  .progress-bar {
+    width: 15%;
+    height: 5px;
+    position: relative;
+  }
+  .progress-bar:after {
+    background: $progressBarArrowLogo no-repeat;
+    width: 20px;
+    height: 20px;
+    content: "";
+    display: block;
+    position: absolute;
+    top: -7px;
+    right: -20px;
+  }
+}
+.highlightedText {
+  color: $brand-primary;
+}
+.rewardsAccordionWrapper {
+  .panel-group {
+    border: none;
+  }
+  .panel {
+    border: none;
+    box-shadow: none;
+    a {
+      font-size: 15px;
+      color: rgba($text-color, .7);
+    }
+  }
+  .panel-heading {
+    position: relative;
+    background-color: #ffffff !important;
+    border: none;
+  }
+  .panel-body {
+    border-top: none !important;
+    p,
+    div {
+      color: rgba($text-color, .7);
+      font-size: 12px;
+    }
+    button {
+      margin-left: 20px;
+    }
+  }
+  .dropdownAcordionLogo {
+    width: 12px;
+    height: 7px;
+    position: absolute;
+    top: 17px;
+    left: 0px;
+  }
+  .collapsed {
+    .triangle {
+      background: $dropdownRightAccordion;
+      width: 8px;
+      height: 12px;
+      top: 14px;
+    }
+  }
+  .panelBodyTextWrapper {
+    margin-bottom: 5px;
+  }
+}
+.rewardsAccordionWrapper,
+.rewardsTableWrapper {
+  h4 {
+    color: rgba($text-color, .6);
+  }
+}
+.rewardsPopUp {
+  width: 255px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 0 rgba(230, 230, 230, 0.5);
+  padding: 15px 30px;
+  z-index: 500;
+  position: fixed;
+  top: 6px;
+  left: 378px;
+  .points {
+    margin-right: 10px;
+  }
+}
+.rewardsHeaderWrapper {
+  background-color: #f9f9f9;
+  position: relative;
+  @media (min-width: 992px) {
+    .col-md-1 {
+      width: 14%;
+    }
+  }
+  @media (min-width: 768px) {
+    .col-sm-1 {
+      width: 13.333333%;
+    }
+  }
+  @media (max-width: 480px) {
+    .col-xs-1 {
+      width: 13.333333%;
+    }
+  }
+
+
+}
+.rewardsHeader {
+  margin-top: 35px;
+}
+.rewardsBodyWrapper {
+  margin-top: 35px;
+}
+.accordionHeader {
+  margin-bottom: 20px;
 }
