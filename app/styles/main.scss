@@ -21,13 +21,13 @@ $closeIcon: url(../images/closeIcon.svg);
 $borderRadius: 3px;
 $overlayBgColor: #b3b3b3;
 $dragAndDropLogo: url(../images/dragAndDropLogo.svg);
-$newbieLogo: url(../images/newbieLogo.png);
-$explorerLogo: url(../images/explorerLogo.png);
-$juniorLogo: url(../images/juniorLogo.png);
-$knightOfDataLogo: url(../images/knightOfData.png);
-$seniorLogo: url(../images/seniorLogo.png);
-$hodlerLogo: url(../images/hodlerLogo.png);
-$mentorLogo: url(../images/mentorLogo.png);
+$newbieLogo: url(../images/newbieLogo.svg);
+$explorerLogo: url(../images/explorerLogo.svg);
+$juniorLogo: url(../images/juniorLogo.svg);
+$knightOfDataLogo: url(../images/knightOfData.svg);
+$seniorLogo: url(../images/seniorLogo.svg);
+$hodlerLogo: url(../images/hodlerLogo.svg);
+$mentorLogo: url(../images/mentorLogo.svg);
 $dropdownRightAccordion: url(../images/dropdownRightAccordion.svg);
 $progressBarArrowLogo: url(../images/progressBarArrow.png);
 
@@ -1228,48 +1228,52 @@ textarea {
 
 
 
-
+.rewardsIcon {
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
 .rewardsIconNewbie {
-  background: $newbieLogo;
-  width: 45px;
-  height: 50px;
+  background-image: $newbieLogo;
+  //width: 45px;
+  //height: 50px;
 }
 
 .rewardsIconExplorer {
-  background: $explorerLogo;
-  width: 53px;
-  height: 51px;
+  background-image: $explorerLogo;
+  //width: 53px;
+  //height: 51px;
 }
 
 .rewardsIconJunior {
-  background: $juniorLogo;
-  width: 35px;
-  height: 60px;
+  background-image: $juniorLogo;
+  //width: 35px;
+  //height: 60px;
 }
 
 .rewardsIconKnight {
-  background: $knightOfDataLogo;
-  width: 48px;
-  height: 60px;
+  background-image: $knightOfDataLogo;
+  //width: 48px;
+  //height: 60px;
 }
 
 .rewardsIconSenior {
-  background: $seniorLogo;
-  width: 62px;
-  height: 52px;
+  background-image: $seniorLogo;
+  //width: 62px;
+  //height: 52px;
 }
 
 .rewardsIconHodler {
-  background: $hodlerLogo;
-  width: 56px;
-  height: 55px;
+  background-image: $hodlerLogo;
+  //width: 56px;
+  //height: 55px;
 }
 
 .rewardsIconMentor {
-  background: $mentorLogo;
-  width: 56px;
-  height: 60px;
+  background-image: $mentorLogo;
+  //width: 56px;
+  //height: 60px;
 }
 
 .rewardsStatusText {
@@ -1395,21 +1399,21 @@ textarea {
 .rewardsHeaderWrapper {
   background-color: #f9f9f9;
   position: relative;
-  @media (min-width: 992px) {
-    .col-md-1 {
-      width: 14%;
-    }
-  }
-  @media (min-width: 768px) {
-    .col-sm-1 {
-      width: 13.333333%;
-    }
-  }
-  @media (max-width: 480px) {
-    .col-xs-1 {
-      width: 13.333333%;
-    }
-  }
+  //@media (min-width: 992px) {
+  //  .col-md-1 {
+  //    width: 14%;
+  //  }
+  //}
+  //@media (min-width: 768px) {
+  //  .col-sm-1 {
+  //    width: 13.333333%;
+  //  }
+  //}
+  //@media (max-width: 480px) {
+  //  .col-xs-1 {
+  //    width: 13.333333%;
+  //  }
+  //}
 
 
 }
@@ -1421,4 +1425,16 @@ textarea {
 }
 .accordionHeader {
   margin-bottom: 20px;
+}
+
+.icons,
+.icon-titles {
+  font-size: 0;
+
+  & > div {
+    font-size: initial;
+    width: calc(100% / 7 - 20px);
+    margin-right: 20px;
+    display: inline-block;
+  }
 }
